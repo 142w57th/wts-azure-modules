@@ -1,0 +1,14 @@
+[0m[1mInitializing modules...[0m
+- cosmosdb_cassandra_keyspace in ..
+- cosmosdb_cassandra_keyspace.cassandra_pe in ../../../private-endpoint
+- local_cosmosdb_account in ../../cosmosdb-account
+- local_pdnsz_cosmos_cassandra in ../../../private-dns-zone
+- local_rg in ../../../resource-group
+- local_snet_default in ../../../subnet
+- local_vnet in ../../../virtual-network
+[0m[1mInitializing provider plugins...[0m
+- Finding hashicorp/azurerm versions matching "3.97.1"...
+- Finding latest version of hashicorp/random...
+- Finding latest version of hashicorp/http...
+- Installing hashicorp/random v3.7.2...
+- Installed hashicorp/random v3.7.2 (signed by HashiCorp)

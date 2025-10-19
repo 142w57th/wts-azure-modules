@@ -11,7 +11,6 @@ resource "azurerm_cosmosdb_account" "adl_cosmos" {
   offer_type                            = var.offer_type
   kind                                  = var.kind
   network_acl_bypass_for_azure_services = var.network_acl_bypass_for_azure_services
-  enable_automatic_failover             = var.enable_automatic_failover
   public_network_access_enabled         = var.public_network_access_enabled
   geo_location {
     location          = var.location

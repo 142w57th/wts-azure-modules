@@ -1,0 +1,46 @@
+[0m[1mInitializing modules...[0m
+- local_akv in ../../key-vault
+- local_akv.kv_pe in ../../private-endpoint
+- local_pdnsz_mysql in ../../private-dns-zone
+- local_rg in ../../resource-group
+- local_snet_mysql in ../../subnet
+- local_uami in ../../user-assigned-identity
+- local_vnet in ../../virtual-network
+- mysql_database in ..
+[0m[1mInitializing provider plugins...[0m
+- Finding latest version of hashicorp/http...
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mFailed to query available provider packages[0m
+[31m│[0m [0m
+[31m│[0m [0m[0mCould not retrieve the list of available versions for provider
+[31m│[0m [0mhashicorp/http: could not query provider registry for
+[31m│[0m [0mregistry.terraform.io/hashicorp/http: the request failed, please try again
+[31m│[0m [0mlater: context canceled
+[31m│[0m [0m
+[31m│[0m [0mTo see which modules are currently depending on hashicorp/http and what
+[31m│[0m [0mversions are specified, run the following command:
+[31m│[0m [0m    terraform providers
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mProvider installation was canceled by an interrupt signal.[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mFailed to query available provider packages[0m
+[31m│[0m [0m
+[31m│[0m [0m[0mCould not retrieve the list of available versions for provider
+[31m│[0m [0mhashicorp/http: could not query provider registry for
+[31m│[0m [0mregistry.terraform.io/hashicorp/http: the request failed, please try again
+[31m│[0m [0mlater: context canceled
+[31m│[0m [0m
+[31m│[0m [0mTo see which modules are currently depending on hashicorp/http and what
+[31m│[0m [0mversions are specified, run the following command:
+[31m│[0m [0m    terraform providers
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mProvider installation was canceled by an interrupt signal.[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m
+[31m╵[0m[0m
+Error: 'terraform init -backend=false' failed in ./wts-azure-modules/azure/mysql-database/test

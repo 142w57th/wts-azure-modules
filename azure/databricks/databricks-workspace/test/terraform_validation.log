@@ -1,0 +1,21 @@
+[0m[1mInitializing modules...[0m
+- databricks in ..
+- databricks.adb_be_pe in ../../../private-endpoint
+- databricks.adb_dbfs_pe in ../../../private-endpoint
+- databricks.adb_fe_pe in ../../../private-endpoint
+- databricks.adb_sso_pe in ../../../private-endpoint
+- key_vault in ../../../key-vault
+- key_vault.kv_pe in ../../../private-endpoint
+- local_nsg in ../../../network-security-group
+- local_pdnsz_adb in ../../../private-dns-zone
+- local_pdnsz_dbfs in ../../../private-dns-zone
+- local_pdnsz_kv in ../../../private-dns-zone
+- local_rg in ../../../resource-group
+- local_snet_default in ../../../subnet
+- local_snet_nsg_association_private in ../../../subnet-network-security-group-association
+- local_snet_nsg_association_public in ../../../subnet-network-security-group-association
+- local_snet_private in ../../../subnet
+- local_snet_public in ../../../subnet
+- local_vnet in ../../../virtual-network
+[0m[1mInitializing provider plugins...[0m
+- Finding latest version of hashicorp/http...
