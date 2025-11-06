@@ -12,7 +12,7 @@ resource "azurerm_synapse_private_link_hub" "syn_synplh" {
 # Private Endpoint configuration
 
 module "synplh_pe_web" {
-  source                         = "../../private-endpoint"
+  source                         = "../private-endpoint"
   basename                       = "${azurerm_synapse_private_link_hub.syn_synplh[0].name}-web"
   resource_group_name            = var.resource_group_name
   location                       = var.location

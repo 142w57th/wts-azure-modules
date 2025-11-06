@@ -59,7 +59,7 @@ resource "azurerm_role_assignment" "syn_ws_sa_role_si_c" {
 }
 
 module "syn_ws_pe_dev" {
-  source                         = "../../private-endpoint"
+  source                         = "../private-endpoint"
   basename                       = "${azurerm_synapse_workspace.adl_syn[0].name}-dev"
   resource_group_name            = var.resource_group_name
   location                       = var.location
@@ -75,7 +75,7 @@ module "syn_ws_pe_dev" {
 }
 
 module "syn_ws_pe_sql" {
-  source                         = "../../private-endpoint"
+  source                         = "../private-endpoint"
   basename                       = "${azurerm_synapse_workspace.adl_syn[0].name}-sql"
   resource_group_name            = var.resource_group_name
   location                       = var.location
@@ -91,7 +91,7 @@ module "syn_ws_pe_sql" {
 }
 
 module "syn_ws_pe_sqlondemand" {
-  source                         = "../../private-endpoint"
+  source                         = "../private-endpoint"
   basename                       = "${azurerm_synapse_workspace.adl_syn[0].name}-sqlondemand"
   resource_group_name            = var.resource_group_name
   location                       = var.location
