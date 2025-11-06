@@ -42,11 +42,6 @@ variable "address_prefixes" {
   description = "The address prefixes to use for the subnet."
 }
 
-variable "private_endpoint_network_policies_enabled" {
-  type        = bool
-  description = "Enable or Disable network policies for the private endpoint on the subnet."
-  default     = false
-}
 
 variable "private_link_service_network_policies_enabled" {
   type        = bool
