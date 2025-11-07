@@ -10,8 +10,8 @@ resource "azurerm_synapse_spark_pool" "syn_synsp" {
 
 
   auto_scale {
-    max_node_count = 50
-    min_node_count = 3
+    max_node_count = var.max_node_count
+    min_node_count = var.min_node_count
   }
   auto_pause {
     delay_in_minutes = 15

@@ -16,6 +16,7 @@ resource "azurerm_synapse_workspace" "adl_syn" {
   managed_virtual_network_enabled      = var.managed_virtual_network_enabled
   managed_resource_group_name          = "${var.resource_group_name}-syn-managed"
   public_network_access_enabled        = var.public_network_access_enabled
+
   identity {
     type = "SystemAssigned"
   }
@@ -33,6 +34,7 @@ resource "azurerm_synapse_workspace_aad_admin" "syn_aad_login" {
   count = var.set_aad_login ? 1 : 0
 }
 
+#double check this, seems iffy
 resource "azurerm_synapse_firewall_rule" "allow_my_ip" {
   name                 = "AllowAll"
   synapse_workspace_id = azurerm_synapse_workspace.adl_syn[0].id

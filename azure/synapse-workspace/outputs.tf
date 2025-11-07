@@ -21,3 +21,8 @@ output "resource_group_name" {
   )
   description = "Resource Group where the Synapse workspace exists."
 }
+
+output "identity" {
+  value       = azurerm_synapse_workspace.adl_syn[0].identity
+  description = "The identity block for this synapse workspace"
+}

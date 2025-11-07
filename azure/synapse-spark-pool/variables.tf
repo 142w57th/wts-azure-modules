@@ -53,3 +53,16 @@ variable "spark_version" {
   }
   default = 2.4
 }
+
+
+variable "max_node_count" {
+  type        = number
+  description = "max number of nodes to scale to"
+  default     = 5
+}
+
+variable "min_node_count" {
+  type        = number
+  description = "min number of nodes to scale to"
+  default     = 1
+}
